@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <context-param>
+  	<param-name>server</param-name>
+  	<param-value>localhost</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>db</param-name>
+  	<param-value>gradute</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>user</param-name>
+  	<param-value>root</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>pwd</param-name>
+  	<param-value>123</param-value>
+  </context-param>
+  
+  
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddUserServlet</servlet-name>
+    <servlet-class>com.sjw.graduate.servlet.AddUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchUserServlet</servlet-name>
+    <servlet-class>com.sjw.graduate.servlet.SearchUserServlet</servlet-class>
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetUserServlet</servlet-name>
+    <servlet-class>com.sjw.graduate.servlet.GetUserServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddFriendsServlet</servlet-name>
+    <servlet-class>com.sjw.graduate.servlet.AddFriendsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchFriendsServlet</servlet-name>
+    <servlet-class>com.sjw.graduate.servlet.SearchFriendsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SendMessageServlet</servlet-name>
+    <servlet-class>com.sjw.graduate.servlet.SendMessageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchMessageServlet</servlet-name>
+    <servlet-class>com.sjw.graduate.servlet.SearchMessageServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+  
+
+
+  
+  
+  
+
+
+  <servlet-mapping>
+    <servlet-name>AddUserServlet</servlet-name>
+    <url-pattern>/servlet/AddUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchUserServlet</servlet-name>
+    <url-pattern>/servlet/SearchUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetUserServlet</servlet-name>
+    <url-pattern>/servlet/GetUserServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AddFriendsServlet</servlet-name>
+    <url-pattern>/servlet/AddFriendsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchFriendsServlet</servlet-name>
+    <url-pattern>/servlet/SearchFriendsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SendMessageServlet</servlet-name>
+    <url-pattern>/servlet/SendMessageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchMessageServlet</servlet-name>
+    <url-pattern>/servlet/SearchMessageServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+
+ <welcome-file-list>
+  <welcome-file>index.jsp</welcome-file>
+ </welcome-file-list>
+ <login-config>
+  <auth-method>BASIC</auth-method>
+ </login-config>
+</web-app>
